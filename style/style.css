@@ -1,0 +1,176 @@
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+
+/* Global Style */
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+b {
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(182, 16, 16);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    color: black;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+}
+
+:root {
+    /* FONTS */
+    --font1: "Montserrat", sans-serif;
+    --font2: "Russo One", sans-serif;
+    /* THEME COLORS */
+    --login-light: rgb(230, 230, 230);
+    --login-med: rgb(207, 207, 207);
+    --login-dark: rgb(167, 167, 167);
+    --login-border: rgb(196, 196, 196);
+    --login-text: rgb(75, 75, 75);
+    --login-background: url("/library/image/texture/diagonal-striped-brick.png");
+}
+
+/* Page Containers */
+.page_container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--login-light);
+    background-image: var(--login-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Styling */
+.login_block {
+    width: 40vw;
+    height: 90vh;
+    background-color: var(--login-med);
+    border: 2px solid var(--login-border);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow: hidden;
+}
+
+.login_title {
+    margin: 0 auto;
+    margin-top: 5vh;
+    font-size: 3vw;
+    font-family: var(--font2);
+    font-weight: 100;
+    color: var(--login-text);
+    margin-bottom: 2vh;
+    text-shadow: .1em .1em 0 var(--login-dark);
+    overflow: visible;
+}
+
+.login_par {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: var(--font1);
+    font-weight: 300;
+    margin-bottom: 5vh;
+    color: var(--login-text);
+    overflow: visible;
+}
+
+.login_subtitle {
+    margin-left: 3vw;
+    font-size: 2vw;
+    font-family: var(--font2);
+    font-weight: 100;
+    color: var(--login-text);
+    text-shadow: .05em .05em 0 var(--login-dark);
+    overflow: visible;
+}
+
+.login_input {
+    all: unset;
+    margin: 0 auto;
+    width: 80%;
+    padding: 1vh 1vw;
+    font-size: 1.5vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    background-color: var(--login-light);
+    border: 1px solid var(--login-border);
+    font-family: var(--font1);
+    color: var(--login-text);
+}
+
+.login_input:focus {
+    border: 1px solid var(--login-border);
+}
+
+.login_submit {
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+    background-color: var(--login-light);
+    border: 1px solid var(--login-border);
+    font-size: 1.5vw;
+    overflow: visible;
+    font-family: var(--font1);
+    color: var(--login-text);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login_submit:hover {
+    filter: brightness(98%);
+}
+
+.login_links {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.login_button {
+    width: 2vw;
+    height: auto;
+    padding: 15px;
+    background-color: var(--login-light);
+    filter: saturate(0%);
+    border-radius: 100vw;
+    overflow: visible;
+    margin: 2vh 1vw;
+    border: 1px solid var(--login-border);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+}
+
+.login_button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
