@@ -46,7 +46,6 @@ body {
     --login-dark: rgb(167, 167, 167);
     --login-border: rgb(196, 196, 196);
     --login-text: rgb(75, 75, 75);
-    --login-background: url("library/image/texture/diagonal-striped-brick.png");
 }
 
 /* Page Containers */
@@ -63,7 +62,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--login-light);
-    background-image: var(--login-background);
+    background-image: url("library/image/texture/diagonal-striped-brick.png");
     display: flex;
     justify-content: center;
     align-items: center;
