@@ -1,5 +1,6 @@
 /* Imported fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 
 /* Global Style */
 html {
@@ -14,6 +15,12 @@ b {
     font-family: inherit;
     font-weight: 500;
     color: rgb(182, 16, 16);
+}
+
+hr {
+    border: 1px solid rgb(200, 200, 200);
+    width: 80%;
+    margin: 2vh auto;
 }
 
 * {
@@ -32,6 +39,7 @@ body {
     /* FONTS */
     --font1: "Montserrat", sans-serif;
     --font2: "Russo One", sans-serif;
+    --font3: "Ephesis", cursive;
     /* THEME COLORS */
     --login-light: rgb(230, 230, 230);
     --login-med: rgb(207, 207, 207);
@@ -48,6 +56,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .login_container {
@@ -58,6 +67,63 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Section Styling */
+.section_container {
+    width: 100vw;
+    height: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section_banner {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    padding-bottom: 5vh;
+    flex-direction: column;
+}
+
+.section_title {
+    font-size: 4vw;
+    font-family: var(--font1);
+    font-weight: 400;
+    margin: 0 auto;
+    margin-top: 4vh;
+}
+
+.section_subtitle {
+    font-size: 2vw;
+    font-family: var(--font1);
+    font-weight: 300;
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+.section_par {
+    font-size: 1.4vw;
+    font-family: var(--font1);
+    font-weight: 150;
+    margin: 2vh 3vw;
+    line-height: 4vh;
+}
+
+.section_signature {
+    font-family: var(--font3);
+    font-weight: 100;
+    font-size: 4vw;
+    margin-top: 5vh;
+    margin-left: 4vw;
+    overflow: visible;
+}
+
+/* Testing Container */
+.testing_container {
+    width: 100vw;
+    height: 1000vh;
 }
 
 /* Login Styling */
@@ -125,6 +191,7 @@ body {
 
 .login_input:focus {
     border: 1px solid var(--login-border);
+    background-color: var(--login-light);
 }
 
 .login_submit {
@@ -173,4 +240,68 @@ body {
     transform: scale(1.1);
     cursor: pointer;
     transition: 0.2s ease-in-out;
+}
+
+/* Haley Saunders */
+#hsaunders {
+    background-image: url("/library/image/texture/diamonds.png"), linear-gradient(45deg, blue, rgb(187, 191, 255));
+    display: none;
+    background-attachment: fixed;
+}
+
+#hsaunders .section_banner {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.531), 0 0 5px rgba(0, 0, 0, 0.267) inset;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+}
+
+/* Tom Cummings */
+#tcummings {
+    background-image: url("/library/image/texture/foggy-birds.png"), linear-gradient(45deg, rgb(51, 51, 51), black);
+    background-attachment: fixed;
+    display: none;
+}
+
+#tcummings .section_banner {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.531), 0 0 5px rgba(0, 0, 0, 0.267) inset;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+}
+
+/* Jarad Buckmaster */
+#jbuckmaster {
+    background-image: url("/library/image/texture/lined-paper-2.png"), linear-gradient(45deg, rgb(83, 66, 43), rgb(49, 29, 5));
+    background-attachment: fixed;
+    display: none;
+}
+
+#jbuckmaster .section_banner {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.531), 0 0 5px rgba(0, 0, 0, 0.267) inset;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+}
+
+/* Katie Eppard */
+#keppard {
+    background-image: url("/library/image/texture/gray-floral.png"), linear-gradient(45deg, rgb(141, 97, 190), rgb(157, 103, 129));
+    background-attachment: fixed;
+    display: none;
+}
+
+#keppard .section_banner {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.531), 0 0 5px rgba(0, 0, 0, 0.267) inset;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 10px;
 }
