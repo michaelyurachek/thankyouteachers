@@ -62,7 +62,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--login-light);
-    background-image: url("library/image/texture/diagonal-striped-brick.png");
+    background-image: url("../library/image/texture/diagonal-striped-brick.png");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,7 +243,7 @@ body {
 
 /* Haley Saunders */
 #hsaunders {
-    background-image: url("library/image/texture/diamonds.png"), linear-gradient(45deg, blue, rgb(187, 191, 255));
+    background-image: url("../library/image/texture/diamonds.png"), linear-gradient(45deg, blue, rgb(187, 191, 255));
     display: none;
     background-attachment: fixed;
 }
@@ -259,7 +259,7 @@ body {
 
 /* Tom Cummings */
 #tcummings {
-    background-image: url("library/image/texture/foggy-birds.png"), linear-gradient(45deg, rgb(51, 51, 51), black);
+    background-image: url("../library/image/texture/foggy-birds.png"), linear-gradient(45deg, rgb(51, 51, 51), black);
     background-attachment: fixed;
     display: none;
 }
@@ -275,7 +275,7 @@ body {
 
 /* Jarad Buckmaster */
 #jbuckmaster {
-    background-image: url("library/image/texture/lined-paper-2.png"), linear-gradient(45deg, rgb(83, 66, 43), rgb(49, 29, 5));
+    background-image: url("../library/image/texture/lined-paper-2.png"), linear-gradient(45deg, rgb(83, 66, 43), rgb(49, 29, 5));
     background-attachment: fixed;
     display: none;
 }
@@ -291,7 +291,7 @@ body {
 
 /* Katie Eppard */
 #keppard {
-    background-image: url("library/image/texture/gray-floral.png"), linear-gradient(45deg, rgb(141, 97, 190), rgb(157, 103, 129));
+    background-image: url("../library/image/texture/gray-floral.png"), linear-gradient(45deg, rgb(141, 97, 190), rgb(157, 103, 129));
     background-attachment: fixed;
     display: none;
 }
