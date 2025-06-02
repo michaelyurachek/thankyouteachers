@@ -1,0 +1,307 @@
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+/* Global Style */
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+b {
+    font-family: inherit;
+    font-weight: 500;
+    color: rgb(182, 16, 16);
+}
+
+hr {
+    border: 1px solid rgb(200, 200, 200);
+    width: 80%;
+    margin: 2vh auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    color: black;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+}
+
+:root {
+    /* FONTS */
+    --font1: "Montserrat", sans-serif;
+    --font2: "Russo One", sans-serif;
+    --font3: "Ephesis", cursive;
+    /* THEME COLORS */
+    --login-light: rgb(230, 230, 230);
+    --login-med: rgb(207, 207, 207);
+    --login-dark: rgb(167, 167, 167);
+    --login-border: rgb(196, 196, 196);
+    --login-text: rgb(75, 75, 75);
+    --login-background: url("/library/image/texture/diagonal-striped-brick.png");
+}
+
+/* Page Containers */
+.page_container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--login-light);
+    background-image: var(--login-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section Styling */
+.section_container {
+    width: 100vw;
+    height: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section_banner {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    padding-bottom: 5vh;
+    flex-direction: column;
+}
+
+.section_title {
+    font-size: 4vw;
+    font-family: var(--font1);
+    font-weight: 400;
+    margin: 0 auto;
+    margin-top: 4vh;
+}
+
+.section_subtitle {
+    font-size: 2vw;
+    font-family: var(--font1);
+    font-weight: 300;
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+.section_par {
+    font-size: 1.4vw;
+    font-family: var(--font1);
+    font-weight: 150;
+    margin: 2vh 3vw;
+    line-height: 4vh;
+}
+
+.section_signature {
+    font-family: var(--font3);
+    font-weight: 100;
+    font-size: 4vw;
+    margin-top: 5vh;
+    margin-left: 4vw;
+    overflow: visible;
+}
+
+/* Testing Container */
+.testing_container {
+    width: 100vw;
+    height: 1000vh;
+}
+
+/* Login Styling */
+.login_block {
+    width: 40vw;
+    height: 90vh;
+    background-color: var(--login-med);
+    border: 2px solid var(--login-border);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.075) inset;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow: hidden;
+}
+
+.login_title {
+    margin: 0 auto;
+    margin-top: 5vh;
+    font-size: 3vw;
+    font-family: var(--font2);
+    font-weight: 100;
+    color: var(--login-text);
+    margin-bottom: 2vh;
+    text-shadow: .1em .1em 0 var(--login-dark);
+    overflow: visible;
+}
+
+.login_par {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: var(--font1);
+    font-weight: 300;
+    margin-bottom: 5vh;
+    color: var(--login-text);
+    overflow: visible;
+}
+
+.login_subtitle {
+    margin-left: 3vw;
+    font-size: 2vw;
+    font-family: var(--font2);
+    font-weight: 100;
+    color: var(--login-text);
+    text-shadow: .05em .05em 0 var(--login-dark);
+    overflow: visible;
+}
+
+.login_input {
+    all: unset;
+    margin: 0 auto;
+    width: 80%;
+    padding: 1vh 1vw;
+    font-size: 1.5vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    background-color: var(--login-light);
+    border: 1px solid var(--login-border);
+    font-family: var(--font1);
+    color: var(--login-text);
+}
+
+.login_input:focus {
+    border: 1px solid var(--login-border);
+    background-color: var(--login-light);
+}
+
+.login_submit {
+    margin: 0 auto;
+    padding: 10px;
+    width: 80%;
+    background-color: var(--login-light);
+    border: 1px solid var(--login-border);
+    font-size: 1.5vw;
+    overflow: visible;
+    font-family: var(--font1);
+    color: var(--login-text);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login_submit:hover {
+    filter: brightness(98%);
+}
+
+.login_links {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.login_button {
+    width: 2vw;
+    height: auto;
+    padding: 15px;
+    background-color: var(--login-light);
+    filter: saturate(0%);
+    border-radius: 100vw;
+    overflow: visible;
+    margin: 2vh 1vw;
+    border: 1px solid var(--login-border);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+}
+
+.login_button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* Haley Saunders */
+#hsaunders {
+    background-image: url("/library/image/texture/diamonds.png"), linear-gradient(45deg, blue, rgb(187, 191, 255));
+    display: none;
+    background-attachment: fixed;
+}
+
+#hsaunders .section_banner {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.531), 0 0 5px rgba(0, 0, 0, 0.267) inset;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+}
+
+/* Tom Cummings */
+#tcummings {
+    background-image: url("/library/image/texture/foggy-birds.png"), linear-gradient(45deg, rgb(51, 51, 51), black);
+    background-attachment: fixed;
+    display: none;
+}
+
+#tcummings .section_banner {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.531), 0 0 5px rgba(0, 0, 0, 0.267) inset;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+}
+
+/* Jarad Buckmaster */
+#jbuckmaster {
+    background-image: url("/library/image/texture/lined-paper-2.png"), linear-gradient(45deg, rgb(83, 66, 43), rgb(49, 29, 5));
+    background-attachment: fixed;
+    display: none;
+}
+
+#jbuckmaster .section_banner {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.531), 0 0 5px rgba(0, 0, 0, 0.267) inset;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+}
+
+/* Katie Eppard */
+#keppard {
+    background-image: url("/library/image/texture/gray-floral.png"), linear-gradient(45deg, rgb(141, 97, 190), rgb(157, 103, 129));
+    background-attachment: fixed;
+    display: none;
+}
+
+#keppard .section_banner {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.531), 0 0 5px rgba(0, 0, 0, 0.267) inset;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border-radius: 10px;
+}
